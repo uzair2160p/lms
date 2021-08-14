@@ -63,12 +63,14 @@ const NavBar = () => {
 
 const LandingPage = () => {
     return (
-        <div className='h-screen'>
+        <div style = {{   backgroundColor: "#5B77FF",
+            backgroundImage: "linear-gradient(to bottom left, #5B77FF 80%, white 20%)" }}>
             <NavBar />
-            <div className='bg-blue-100 min-h-3/4 text-white'>
+            <div //style = {{width: 0,height: 0, borderTop: "100px solid gray", borderRight: "100px solid transparent"}}
+            >
                 <div className='grid grid-cols-2 px-24 py-6 items-center'>
                     <div className='pr-8'>
-                        <div className='text-5xl'>You’ll wonder how you taught without it</div>
+                        <div style = {{ fontFamily: 'Roboto'}} className='text-5xl'>You’ll wonder how you taught without it</div>
                         <div className='text-xl pt-4 pr-16'>Engaging media and formative assessments to make every lesson interactive.</div>
                     </div>
                     <div className='flex flex-col items-center justify-content'>
