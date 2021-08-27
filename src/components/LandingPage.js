@@ -5,8 +5,18 @@ import Logo from '../../public/logo.png'
 import Hamburger from '../../public/hamburger.svg'
 import ChildTop from '../../public/child-top.jpeg'
 import ChildBottom from '../../public/child-bot.jpeg'
+import { List, ListItem } from '@material-ui/core';
+import background from "../assets/LandingPage1.jpg";
+function ListItemLink(props) {
+    return <ListItem button component="a" {...props} />;
+  }
 
-
+const P1 = () =>{
+    <div style={{ backgroundImage: `url(background)`, 
+                  height: '100%', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundSize: 'cover' 
+                  
+                }}><span>o</span></div>
+}
 const NavBar = () => {
     const [sidebarToggle, setSidebarToggle] = useState(false)
 
@@ -63,10 +73,13 @@ const NavBar = () => {
 
 const LandingPage = () => {
     return (
-        <div style = {{   backgroundColor: "#5B77FF",
-            backgroundImage: "linear-gradient(to bottom left, #5B77FF 80%, white 20%)" }}>
-            <NavBar />
-            <div //style = {{width: 0,height: 0, borderTop: "100px solid gray", borderRight: "100px solid transparent"}}
+        <div style = {{   //backgroundColor: "#5B77FF",
+        backgroundImage: `url(${background})`,// no-repeat center center fixed,
+        backgroundSize: 'cover', width:'100%', height: '100%'
+            // backgroundImage: "linear-gradient(to bottom left, #5B77FF 80%, white 20%)" 
+            }}>
+            <NavBar /><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+            {/* <div //style = {{width: 0,height: 0, borderTop: "100px solid gray", borderRight: "100px solid transparent"}}
             >
                 <div className='grid grid-cols-2 px-24 py-6 items-center'>
                     <div className='pr-8'>
@@ -95,7 +108,8 @@ const LandingPage = () => {
                         <div>or Request a Quote</div>
                     </div>
                 </div>
-            </div>
+            </div> */}
+            {/* <div><P1 /></div> */}
         </div>
 
     )
